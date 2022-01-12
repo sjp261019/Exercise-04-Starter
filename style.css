@@ -12,9 +12,21 @@
     box-sizing: border-box;
 }
 
+.container-all {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
 .container {
     background-color: blue;
     height: 600px;
+    display: flex;
+}
+
+.articlecontainer {
+    background-color: blue;
+    height: 520px;
     display: flex;
 }
 
@@ -123,7 +135,17 @@
 @media screen and (max-width: 768px) {
     .container {
         background-color: blue;
-        height: 800px;
+        height: 1200px;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+    }
+
+    .articlecontainer {
+        background-color: blue;
+        height: 1200px;
         width: 100%;
         display: flex;
         flex-direction: column;
@@ -133,12 +155,14 @@
 
     .box {
         background-color: black;
+        height: 600px;
         width: 100%;
     }
     
     .boxinfo {
         background-color: black;
-        height: 800px;
+        display: flex;
+        height: 600px;
         width: 100%;
     }
 
@@ -166,11 +190,17 @@
     .boxarticle {
         height: 600px;
         width: 100%;
+        align-items: left;
+        justify-content: flex-start;
+    }
+
+    .boxarticle h1 h3 p {
+        margin-left: 20px;
     }
 
     .boxarticle img {
+        height: 400px;
         width: 100%;
-        padding: 10px;
     }
 
     .articlebyline{
